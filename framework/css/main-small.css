@@ -57,7 +57,8 @@ body {
 
 .headline {
     color:#ffffff; 
-    position: relative;
+    position: absolute;
+    margin: 0 auto; 
 }
 
 .img-caption {
@@ -75,71 +76,34 @@ body {
  }
 
  /*STRUCTURE */
-@media screen and (max-width: 360px) {
-  .cover{
-  background: url('img/cover-small.png') no-repeat center center; 
-  height: 100vh; 
-  width: 100vw;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.cover {
   position: relative;
-  }
-}
-
-
-@media screen and (min-width: 361px) and (max-width:640px) {
-  .cover{
-  background: url('img/cover-medium.png') no-repeat center center;
-  height: 100vh; 
   width: 100vw;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative; 
-  }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (max-width: 680px){
   .cover{
-  background: url('img/cover-large.png') no-repeat center center;
-  height: 100vh; 
-  width: 100vw;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative; 
+    height: 100vh;
   }
 }
 
-/*
-  WHY THIS DOESN'T WORK ? I DON'T KNOW
-  cover {
-  position: relative;
-  display: block;
+@media screen and (min-width: 681px) and (max-width:768px){
+  .cover{
+    height: 95vh; 
+  }
 }
 
-.cover-img {
-    width: 100vw;
-    display: inline-block;
-    vertical-align: middle;
-    font: 0/0 serif;
-    text-shadow: none;
-    color: transparent;
-    background-size: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-image: url("img_src/cover.png");
+@media screen and (min-width: 768px) and (max-width:1024px){
+  .cover{
+    height: 85vh; 
+  }
 }
 
-.cover-img-inner {
-    display: inline-block;
-    height: 0;
-    padding-top: 63.3%;
-}*/
+@media screen and (min-width: 1024px){
+  .cover{
+    height: 80vh; 
+  }
+}
 
 .row {
     max-width: 700px;
