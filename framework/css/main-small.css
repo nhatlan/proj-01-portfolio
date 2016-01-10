@@ -46,6 +46,24 @@ body {
     right: 0; 
 }
 
+@media screen and (min-width: 1024px) and (max-width:1280px) {
+  .headline{
+    bottom: 20%; 
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width:1600px) {
+  .headline{
+    bottom: 40%; 
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .headline{
+    bottom: 48%; 
+  }
+}
+
 .img-caption {
     font: normal 300 0.9em/1.5 Lato, sans-serif;
     color: #919191; 

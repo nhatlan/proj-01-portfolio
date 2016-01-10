@@ -8,12 +8,13 @@ module.exports = function(grunt) {
           engine: 'gm',
           sizes: [{
             name:"small",
-            width: 320,
+            width: 360,
           },
           {
             name:"medium",
-            width: 640
-          },{
+            width: 640, 
+          },
+          {
             name:"large", 
             width: 1024, 
           }
