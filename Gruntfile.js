@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     responsive_images: {
-      dev: {
+      img: {
         options: {
           engine: 'gm',
           sizes: [{
@@ -30,13 +30,8 @@ module.exports = function(grunt) {
           cwd: 'framework/css/img_src/',
           dest: 'framework/css/img/'
         }]
-      }
-    },
-  }
-
-  {
-    responsive__cover_images: {
-      dev: {
+      },
+      cover: {
         options: {
           engine: 'gm',
           newsFileOnly: true, 
@@ -45,28 +40,28 @@ module.exports = function(grunt) {
             width: 320,
             height: 480, 
             aspectRatio: false, 
-            gravity: center, 
+            gravity: "Center", 
           },
           {
             name:"portrait-small",
             width: 360,
             height: 640,
             aspectRatio: false, 
-            gravity: center, 
+            gravity: "Center", 
           },
           {
             name:"portrait-medium",
             width: 768,
             height: 1024,
             aspectRatio: false, 
-            gravity: center, 
+            gravity: "Center", 
           },
           {
             name:"portrait-large",
             width: 980,
             height: 1280,
             aspectRatio: false, 
-            gravity: center, 
+            gravity: "Center", 
           },
           {
             name:"landscape-small", 
@@ -108,6 +103,6 @@ module.exports = function(grunt) {
   );
   
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.registerTask('default', ['responsive_images, responsive__cover_images']);
+  grunt.registerTask('default', ['responsive_images:img', 'responsive_images:cover']);
 
 };
