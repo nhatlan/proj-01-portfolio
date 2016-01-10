@@ -19,7 +19,8 @@
 <body>
     <div class="container-fluid">
         <div class="cover">
-            <picture class="cover_img">
+            <!-- PICTURE ELEMENT 
+             <picture class="cover_img">
                 <source 
                     media="screen and (max-pixel-ratio:1)"
                     srcset="
@@ -43,7 +44,19 @@
                 <img 
                     src="framework/css/img_src/ben.png" height="350" width="700" 
                     alt="mountain cover image"/>
-            </picture>            
+            </picture>  -->   
+            <img class="cover-img"
+                src="framework/css/img_cover/cover-landscape-small.png" height="350" width="700"
+                srcset="
+                        framework/css/img_cover/cover-portrait-extra-small.png 320w, 
+                        framework/css/img_cover/cover-landscape-small.png 360w,
+                        framework/css/img_cover/cover-landscape-medium.png 640w,
+                        framework/css/img_cover/cover-landscape-large.png 1024w,
+                        framework/css/img_cover/cover-landscape-extra-large.png 1920w,
+                        " 
+                sizes="100vw"
+                alt="mountain cover image"
+            />        
             <div class="row headline">
                 <h1>The hard thing about the hard thing</h1>
                 <h2>My view on Ben Horowitz’s latest book</h2>
