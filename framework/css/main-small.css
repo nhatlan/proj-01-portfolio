@@ -31,10 +31,22 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 320px) {
+  .headline{
+    top: 45%; 
+  }
+
+  .cover{
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (min-width:321px) and (max-width: 655px) {
   .headline{
     top: 50%; 
   }
+
 }
 
 @media screen and (min-width: 633px) {
@@ -63,9 +75,9 @@ body {
  }
 
  /*STRUCTURE */
-@media screen and (min-width: 641px) {
+@media screen and (max-width: 360px) {
   .cover{
-  background: url('img/cover-large.png') no-repeat center center; 
+  background: url('img/cover-small.png') no-repeat center center; 
   height: 100vh; 
   width: 100vw;
   -webkit-background-size: cover;
@@ -77,9 +89,22 @@ body {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 361px) and (max-width:640px) {
   .cover{
   background: url('img/cover-medium.png') no-repeat center center;
+  height: 100vh; 
+  width: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; 
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .cover{
+  background: url('img/cover-large.png') no-repeat center center;
   height: 100vh; 
   width: 100vw;
   -webkit-background-size: cover;
