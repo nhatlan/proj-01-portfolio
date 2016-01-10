@@ -97,13 +97,41 @@ module.exports = function(grunt) {
           cwd: 'framework/css/img_cover_src/',
           dest: 'framework/css/img_cover/'
         }]
+      },
+            thumbnail: {
+        options: {
+          engine: 'gm',
+          sizes: [{
+            name:"small",
+            width: 360,
+            height: 270, 
+            aspectRatio: false, 
+          },
+          {
+            name:"medium",
+            width: 640, 
+          }
+          ]
+        },
+
+        /*
+        You don't need to change this part if you don't change
+        the directory structure.
+        */
+        files: [{
+          expand: true,
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'framework/css/img_thumb_src/',
+          dest: 'framework/css/img_thumb/'
+        }]
       }
+
     },
   }
 
   );
   
   grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.registerTask('default', ['responsive_images:img', 'responsive_images:cover']);
+  grunt.registerTask('default', ['responsive_images:img', 'responsive_images:cover', 'responsive_images:thumbnail']);
 
 };

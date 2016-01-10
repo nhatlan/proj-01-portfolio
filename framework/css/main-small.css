@@ -81,7 +81,7 @@ body {
  /*STRUCTURE */
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .cover {
@@ -132,3 +132,46 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
 .img {
     margin: 1em 0 1em 0;
  }
+
+ .related-img {
+  -webkit-filter: saturate(90%) brightness(0.5);
+ }
+
+  /*ADDITIONAL COMPONENT */
+
+.related-post-block {
+  position: relative; 
+  display: block;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.related-text {
+  position: absolute; 
+  top: 0; 
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto; 
+  height: 4em; 
+  padding: 0.5em; 
+}
+
+.related-title{
+  font: normal 400 1.3em/1.5 Droid Serif, serif;
+  color: #ffffff; 
+}
+
+.recommended-post {
+  margin: 0 auto 1em auto; 
+}
+
+@media screen and (min-width: 768px){
+  .related-img{
+    height: 270px;
+    width: 100%;  
+  }
+  .related-post-block :nth-of-type(odd){
+    padding-right: 0.5em;
+  }
+}
