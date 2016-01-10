@@ -9,6 +9,12 @@ h2 {
   padding: 0 16px 0 16px;
 }
 
+@media screen and (max-width: 680px){
+  .cover{
+    font-size:0.8em;  
+  }
+}
+
 h3 {
     font: normal 700 1.7em/1.2 Droid Serif, serif;
     padding: 1em 16px 0.5em 16px;
@@ -36,6 +42,8 @@ body {
     position: absolute;
     margin: 0 auto; 
     bottom: 10%; 
+    left: 0;
+    right: 0; 
 }
 
 .img-caption {
@@ -65,6 +73,7 @@ img {
 .cover-img {
   display: block; 
   width: 100%;
+
 }
 
 /*
