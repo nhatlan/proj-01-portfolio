@@ -21,16 +21,17 @@
         <div class="cover">
             <picture class="cover_img">
                 <source 
+                    media="(orientation:portrait)"
                     srcset="
                         framework/css/img_cover/cover-portrait-extra-small.png 480h,
                         framework/css/img_cover/cover-portrait-small.png 640h,
                         framework/css/img_cover/cover-portrait-medium.png 1024h,
                         framework/css/img_cover/cover-portrait-large.png 1280h,
                         "
-                    sizes-h="100vw"
+                    sizes-h="100vh"
                 />
                 <source 
-                    media="screen and (min-pixel-ratio:4/3)"
+                    media="(orientation:landscape)"
                     srcset="
                         framework/css/img_cover/cover-landscape-small.png 360w,
                         framework/css/img_cover/cover-landscape-medium.png 640w,
