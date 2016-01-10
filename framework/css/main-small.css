@@ -31,34 +31,11 @@ body {
     font-size: 18px;
 }
 
-@media screen and (max-width: 320px) {
-  .headline{
-    top: 45%; 
-  }
-
-  .cover{
-    font-size: 5vw;
-  }
-
-}
-
-@media screen and (min-width:321px) and (max-width: 655px) {
-  .headline{
-    top: 50%; 
-  }
-
-}
-
-@media screen and (min-width: 633px) {
-  .headline{
-    top: 65%; 
-  }
-}
-
 .headline {
     color:#ffffff; 
     position: absolute;
     margin: 0 auto; 
+    bottom: 10%; 
 }
 
 .img-caption {
@@ -76,11 +53,22 @@ body {
  }
 
  /*STRUCTURE */
-.cover {
-  position: relative;
-  width: 100vw;
+
+img {
+  max-width: 100%;
 }
 
+.cover {
+  position: relative;
+}
+
+.cover-img {
+  display: block; 
+  width: 100%;
+}
+
+/*
+ON SOLVING ART-DIRECTED RESP IMG APPROACH 
 @media screen and (max-width: 680px){
   .cover{
     height: 100vh;
@@ -103,7 +91,7 @@ body {
   .cover{
     height: 80vh; 
   }
-}
+}*/
 
 .row {
     max-width: 700px;
