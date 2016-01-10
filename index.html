@@ -21,17 +21,16 @@
         <div class="cover">
             <picture class="cover_img">
                 <source 
-                    media="screen and (max-pixel-ratio:1)"
                     srcset="
                         framework/css/img_cover/cover-portrait-extra-small.png 480h,
                         framework/css/img_cover/cover-portrait-small.png 640h,
                         framework/css/img_cover/cover-portrait-medium.png 1024h,
                         framework/css/img_cover/cover-portrait-large.png 1280h,
                         "
-                    sizes="100vh"
+                    sizes-h="100vw"
                 />
                 <source 
-                    media="screen and (min-pixel-ratio:1.1)"
+                    media="screen and (min-pixel-ratio:4/3)"
                     srcset="
                         framework/css/img_cover/cover-landscape-small.png 360w,
                         framework/css/img_cover/cover-landscape-medium.png 640w,
@@ -41,8 +40,9 @@
                     sizes="100vw"
                 />
                 <img 
-                    src="framework/css/img_src/ben.png" height="350" width="700" 
-                    alt="mountain cover image"/>
+                    src="framework/css/img_cover/cover-portrait-extra-small.png" height="480" width="320" 
+                    alt="mountain cover image"
+                    />
             </picture>            
             <div class="row headline">
                 <h1>The hard thing about the hard thing</h1>
@@ -61,21 +61,24 @@ He’s a happily married man with three wonderful kids, but most of us are inter
 First of all, 100% of the earnings of the book will be donated to charity, and that’s a nice thing.</p>           <h4>The first part </h4>
             <p>The part of the book recalls many moments of Ben’s life, either as a kid growing up and getting to know the world, or as a young technical employee at Netscape, and later as a CEO.</p>
         </div>
-            <div class="img">
-                <img src="framework/css/img_src/ben.png"
-                     srcset="framework/css/img/ben-medium.png 640w,
-                             framework/css/img/ben-small.png 320w"
-                    sizes="100vw"
-                     alt="Ben Horowitz" />
-                <p class="img-caption">Ben Horowitz is a type of very straight to the point entrepreneur</p>
+            <div class="row image">
+                <div class="img">
+                    <img src="framework/css/img_src/ben.png"
+                         srcset="framework/css/img/ben-medium.png 640w,
+                                 framework/css/img/ben-small.png 320w"
+                         alt="Ben Horowitz" />
+                    <p class="img-caption">Ben Horowitz is a type of very straight to the point entrepreneur</p>
+                </div>
             </div>
-            <p>In essence, Ben and his partner Marc Andreessen, after taking a look at the VC landscape, and realizing that out of 800 VCs, only 6 brought acceptable returns for their investors, decide to fund a new one, based on the following principles:</p>
-            <p class="qoute">“Flowers. Flowers are really cheap. But do you know what’s expensive?” he asked.
-Again, I replied, “No, what?”
-He said, “Divorce”.
-This joke made it suddenly clear that by continuing on the course I was on, I might lose my family.
-By doing everything, I would fail at the most important thing.<br/> The hard thing about the hard thing</p>
-            <p>I’ve started realizing this same thing only recently, and I like to think that realizing it has saved my life. Thanks, Ben, for reminding me of this. It is too important not to think about it every day. And that’s all, folks.</p>
+            <div class="row paragraph">
+                <p>In essence, Ben and his partner Marc Andreessen, after taking a look at the VC landscape, and realizing that out of 800 VCs, only 6 brought acceptable returns for their investors, decide to fund a new one, based on the following principles:</p>
+                <p class="qoute">“Flowers. Flowers are really cheap. But do you know what’s expensive?” he asked.
+                    Again, I replied, “No, what?”
+                    He said, “Divorce”.
+                    This joke made it suddenly clear that by continuing on the course I was on, I might lose my family.
+                    By doing everything, I would fail at the most important thing.<br/> The hard thing about the hard thing</p>
+                <p>I’ve started realizing this same thing only recently, and I like to think that realizing it has saved my life. Thanks, Ben, for reminding me of this. It is too important not to think about it every day. And that’s all, folks.</p>
+            </div>
         </div>
         <div class="row comment">
         </div>
