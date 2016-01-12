@@ -142,8 +142,8 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
 .related-post-block {
   position: relative; 
   display: block;
-  margin: 0 0 1em 0;
-  padding: 0;
+  margin: 0 0 2em
+   0;
 }
 
 .related-title {
@@ -187,10 +187,11 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
 
 .title-component p {
   color: #F24B3B; 
+  padding: 0; 
 }
 
 .rcm-block {
-  padding: 0 0 0 0 ;
+  margin-bottom: 1em;
 }
 
 .rcm-block-content {
@@ -255,13 +256,21 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
     height: 270px;
     width: 100%;  
   }
-  .related-post-block:nth-of-type(2n+0){
-    padding-right: 0.1em;
-  }
+}
 
-  .rcm-block:nth-of-type(1n+0) {
-  padding-right: 0.3em ;
-  }
+.comment {
+  background-color: #f8f8f8;
+  margin: 2em 0 2em 0; 
+}
+
+.comment-meta {
+  font: normal 300 0.8em/1.5 Lato, sans-serif;
+  color: #4ED0D4; 
+}
+
+.comment-meta span {
+  padding: 1em; 
+  
 }
 
 footer {
@@ -272,5 +281,5 @@ footer {
 footer i {
   padding: 0.5em; 
   color: #506077; 
-  
+
 }
