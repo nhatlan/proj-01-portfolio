@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="framework/css/normalize.css">
     <link rel="stylesheet" href="framework/js/jquery-1.11.3.min.js">
     <link rel="stylesheet" href="framework/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="framework/css/font-awesome-4.5.0/css/font-awesome.css">
     <title>FE Portfolio</title>
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -93,7 +94,7 @@ First of all, 100% of the earnings of the book will be donated to charity, and t
         </div>
         <div class="row related-post"> 
             <div class="title-component">
-                Related post
+                <p>Related post</p>
             </div> 
             <div class="related-post-block col-xs-12 col-sm-6">
                 <img class="related-img"
@@ -104,16 +105,14 @@ First of all, 100% of the earnings of the book will be donated to charity, and t
                 alt="forest"
                 /> 
                  
-                <div class="related-text">
-                    <div class="related-title">
-                        Running a Google Design Sprint from start to end
-                    </div>
-                    <div class="related-author">
-                        <span class="ava"><img src="" alt=""></span>
-                        <span class="related-author-name">Nelson Maddeline</span>
-                        <span class="related-timestamp">20 weeks ago</span>
-                    </div>
-                </div>        
+                <div class="related-title">
+                    Running a Google Design Sprint from start to end
+                </div>    
+                <div class="related-author">
+                    <span class="ava"><img src="framework/css/ava/male.jpeg" class="img-circle" alt="" height="36" width="36"></span>
+                    <span class="related-author-name">Nelson Maddeline</span>
+                    <span class="related-timestamp">20 weeks ago</span>
+                </div>    
             </div>
             <div class="related-post-block col-xs-12 col-sm-6">
                 <img class="related-img"
@@ -128,7 +127,7 @@ First of all, 100% of the earnings of the book will be donated to charity, and t
                         How I became a morning person (and why I decided to make the change)
                     </div> 
                     <div class="related-author">
-                        <span class="ava"><img src="" alt=""></span>
+                        <span class="ava"><img src="framework/css/ava/female.jpeg" class="img-circle" alt="ava" height="36" width="36"></span>
                         <span class="related-author-name">John Zeratsky</span>
                         <span class="related-timestamp">10 weeks ago</span>
                     </div>
@@ -137,10 +136,92 @@ First of all, 100% of the earnings of the book will be donated to charity, and t
         </div>
         <div class="row recommended-post">
             <div class="title-component">
-                Recommended post
+                <p>Recommended post</p>
             </div> 
+            <div class="row rcm-post-block">
+                <div class="rcm-block col-xs-12 col-sm-6">
+                    <div class="rcm-block-banner">
+                        <span class="tag">
+                            <i class="fa fa-hashtag"></i>
+                            Social Media
+                        </span>
+                        <span class="subscribe pull-right">
+                            subscribe
+                            <i class="fa fa-plus-square"></i>
+                        </span>
+                    </div>
+                    <div class="rcm-block-img">
+                       <img 
+                            src="framework/css/img_thumb/building-small.png"
+                            srcset="
+                                framework/css/img_thumb/building-small.png 360w,
+                                framework/css/img_thumb/building-medium.png 640w"
+                            alt="building"/> 
+                        <div class="rcm-block-title">
+                            Facebook Mental Health Problem
+                        </div>
+                    </div>
+                    <div class="rcm-block-content">
+                        <div class="rcm-author">
+                            <span class="ava"><img src="framework/css/ava/female.jpeg" class="img-circle" alt="ava"></span>
+                            <span class="related-author-name">John Zeratsky</span>
+                            <span class="related-timestamp">10 weeks ago</span>
+                        </div>
+                        <p class="block-excerpt">
+                            If you’re not living this way, you’re doing it wrong. You’re -insert age under 35- and haven’t saved -a large amount of money -
+                        </p>
+                        <div class="rcm-meta">
+                            <span class="meta-like"><i class="fa fa-thumbs-o-up"></i> 10 likes</span>
+                            <span class="meta-comment pull-right"><i class="fa fa-comment-o"></i> 20 comments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rcm-block col-xs-12 col-sm-6">
+                    <div class="rcm-block-banner">
+                        <span class="tag">
+                            <i class="fa fa-hashtag"></i>
+                            Life Hacks
+                        </span>
+                        <span class="subscribe pull-right">
+                            subscribe
+                            <i class="fa fa-plus-square"></i>
+                        </span>
+                    </div>
+                    <div class="rcm-block-img">
+                       <img 
+                            src="framework/css/img_thumb/desert-small.png"
+                            srcset="
+                                framework/css/img_thumb/desert-small.png 360w,
+                                framework/css/img_thumb/desert-medium.png 640w"
+                            alt="desert"/> 
+                        <div class="rcm-block-title">
+                            Live your life, stop hack it around
+                        </div>
+                    </div>
+                    <div class="rcm-block-content">
+                        <div class="rcm-author">
+                            <span class="ava"><img src="framework/css/ava/male.jpeg" class="img-circle" alt="ava"></span>
+                            <span class="related-author-name">Jerome Enatod</span>
+                            <span class="related-timestamp">7 weeks ago</span>
+                        </div>
+                        <p class="block-excerpt">
+                            Also oh my god you haven’t been to (insert gorgeous far away land that’s probably dirt cheap to travel around in)?!
+                        </p>
+                        <div class="rcm-meta">
+                            <span class="meta-like"><i class="fa fa-thumbs-o-up"></i> 20 likes</span>
+                            <span class="meta-comment pull-right"><i class="fa fa-comment-o"></i> 50 comments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer></footer>
+        <footer class="row">
+            <i class="fa fa-apple"></i>
+            <i class="fa fa-dribbble"></i>
+            <i class="fa fa-codiepie"></i>
+            <i class="fa fa-codepen"></i>
+            <i class="fa fa-android"></i>
+        </footer>
     </div>    
 </body>
 </html>

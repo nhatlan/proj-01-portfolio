@@ -146,108 +146,29 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
   padding: 0;
 }
 
-.related-title {
+.related-text {
   position: absolute; 
-  top: 10%; 
+  top: 0; 
+  bottom: 0;
+  right: 0;
+  left: 0;
   margin: auto; 
   height: 4em; 
-  padding: 0.5em;
-  font: normal 400 1.3em/1.5 Droid Serif, serif;
-  color: #ffffff;  
+  padding: 0.5em; 
 }
 
-.related-author {
-  position: absolute; 
-  bottom: 5%; 
-  padding: 1em;
+.related-title {
+  font: normal 400 1.3em/1.5 Droid Serif, serif;
+  color: #ffffff; 
 }
 
 .related-author {
   font: normal 300 0.8em/1.5 Lato, sans-serif;
-  color: #fbfbfb; 
-  margin-top: 0.5em;
+  color: #ffffff; 
 }
 
 .recommended-post {
   margin: 0 auto 1em auto; 
-}
-
-.ava img {
-  width: 20px; 
-  height: 20px;
-}
-
-.ava {
-  margin-right: 0.5em; 
-}
-
-.related-author-name {
-  margin-right: 0.5em;
-}
-
-.title-component p {
-  color: #F24B3B; 
-}
-
-.rcm-block {
-  padding: 0 0 0 0 ;
-}
-
-.rcm-block-content {
-  background-color: #f8f8f8;
-  border-radius: 0 0 10px 10px;
-
-}
-
-
-.rcm-block-banner {
-  background-color: #2E3944;
-  padding: 0.5em; 
-}
-
-.rcm-block-banner .tag {
-  color: #5DC5CE;
-  font: normal 400 1em/2 Droid Sans, sans-serif;
-}
-
-.rcm-block-banner .subscribe {
-  color: #FF7079; 
-  font: normal 400 1em/2 Droid Sans, sans-serif;
-}
-
-.rcm-block-img {
-  position: relative;
-}
-
-.rcm-block-img img { 
-  -webkit-filter: saturate(90%) brightness(0.5); 
-}
-
-.rcm-block-title {
-  position: absolute; 
-  bottom: 5%; 
-  margin: auto; 
-  padding: 0.4em;
-  font: normal 400 1.3em/1.5 Droid Serif, serif;
-  color: #ffffff;  
-}
-
-.rcm-author {
-  font: normal 300 0.8em/1.5 Lato, sans-serif;
-  color: #919191; 
-  padding: 0.8em;
-}
-
-.rcm-meta {
-  font: normal 300 0.8em/1.5 Lato, sans-serif;
-  color: #919191; 
-  padding: 0.8em;
-  border-top: 1px solid #919191;
-  margin: 0 0.8em 0 0.8em; 
-}
-
-.rcm-meta .meta-like, .rcm-meta .meta-comment {
-  color: #919191
 }
 
 @media screen and (min-width: 768px){
@@ -255,22 +176,7 @@ ON SOLVING ART-DIRECTED RESP IMG APPROACH
     height: 270px;
     width: 100%;  
   }
-  .related-post-block:nth-of-type(2n+0){
-    padding-right: 0.1em;
+  .related-post-block :nth-of-type(odd){
+    padding-right: 0.5em;
   }
-
-  .rcm-block:nth-of-type(1n+0) {
-  padding-right: 0.3em ;
-  }
-}
-
-footer {
-  padding: 0.8em; 
-  text-align: center;
-}
-
-footer i {
-  padding: 0.5em; 
-  color: #506077; 
-  
 }
